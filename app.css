@@ -1,0 +1,139 @@
+
+/*回到顶部*/
+
+#top {
+    position: fixed;
+    left: 1200px;
+    top: 500px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/*瀑布流*/
+
+.water {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.pbimg-box {
+    width: 200px;
+    position: absolute;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.pbimg-box img {
+    width: 100%;
+}
+
+.pb-content {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#load {
+    display: inline-block;
+    text-decoration: none;
+    color: crimson;
+    border: 1px solid crimson;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    /*margin:100px;*/
+}
+
+
+/*轮播*/
+
+.carousel {
+    width: 1000px;
+    height: 500px;
+    background-color: #DDD;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-li {
+    list-style: none;
+}
+
+.carousel .img-ct {
+    position: relative;
+}
+
+.carousel .img-ct li {
+    width: 1000px;
+    height: 500px;
+    display: none;
+    position: absolute;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.carousel .arrow:hover {
+    opacity: 0.8;
+}
+
+.carousel .arrow-pro {
+    left: 10px;
+}
+
+.carousel .arrow-next {
+    right: 10px;
+}
+
+.carousel .bar {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    font-size: 0px;
+}
+
+.carousel .bar-ct {
+    display: inline-block;
+    padding: 0;
+}
+
+.carousel .bar-ct>li {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 0px 10px;
+    border: 1px solid #EEE;
+}
+
+.carousel .active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.carousel .bar-ct img {
+    width: 150px;
+    height: 75px;
+}
